@@ -1,0 +1,99 @@
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  .sign-in-text {
+    font-weight: 500;
+    opacity: 0.5;
+  }
+  .login-parent-container {
+    height: 729px;
+  }
+  .img-parent-container img {
+    width: 600px;
+  }
+  .login-image-container {
+    background-color: black;
+  }
+  .form-container button {
+    background-color: rgb(114,105,239);
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  .forgot-link, .signup-link {
+    color: black;
+    transition: opacity 0.2s;
+    background-color: rgb(238,237,235);
+  }
+  .forgot-link:hover, .signup-link:hover {
+    opacity: 0.5;
+  }
+  .home-container {
+    height: 729px;
+    position: relative; 
+  }
+  .fa-facebook-messenger, .fa-user, .fa-comment-dots, .fa-gear, .fa-magnifying-glass {
+    background-color: white;
+  }
+  .search-bar {
+    border: none;
+  }
+  .third-sec {
+    overflow: auto;
+  }
+  .forgot-parent, .forgot-span   {
+    background-color: rgb(238,237,235);
+  }
+  .login-btn {
+    background-color: black;
+  }
+.ant-layout-sider-trigger {
+  display: none;
+}
+.menu-item:hover,
+.menu-item:active {
+  background-color: black;
+  color: white;
+}
+.form-container input {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.reg-container, .form-container-reg  {
+  height: 729px;  
+}
+.image-container img {
+  width: 600px;
+}
+.addTask-btn {
+  border: none;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.7);
+}
+.addTask-btn-container span {
+  color: rgba(0, 0, 0, 0.7);
+}
+.addTask-btn-container:hover {
+  cursor: pointer;
+}
+.addTask-parent-container, .addTask-btn-container, .inputTask-container  {
+  border-radius: 5px;
+}
+.input-task, .input-description  {
+  border: none;
+}
+.action-bar { 
+  border-top: 1px solid rgba(0, 0, 0, 0.1 );
+}
+.addDate-txt, .addTask-btn, .cancel-btn, .add-task-btn  {
+  color: rgba(0, 0, 0, 0.7);
+}
+.upcomming-page-container {
+  height: 450px;
+  overflow-y: auto;
+}
+.editBtns:hover {
+  background-color: white;
+}

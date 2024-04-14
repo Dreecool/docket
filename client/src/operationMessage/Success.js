@@ -1,0 +1,5 @@
+
+
+export const SUCCES_MESSAGE = {
+    REGISTER_SUCCESS: "SUCCESS"
+}
