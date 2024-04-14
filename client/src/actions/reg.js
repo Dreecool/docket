@@ -3,7 +3,7 @@ import Axios, { HttpStatusCode } from "axios"
 
 export const setReg = createAsyncThunk("reg", async (data) => {
     try {
-        const response = await Axios.post("http://localhost:3001/register", data)
+        const response = await Axios.post("https://docket-84ya.vercel.app/register", data)
         return HttpStatusCode.Accepted
     } catch(error) {
         throw error.response.data
