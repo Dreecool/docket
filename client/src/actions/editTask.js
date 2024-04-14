@@ -3,7 +3,7 @@ import Axios from 'axios';
 
 export const editTask = createAsyncThunk("editTask", async(data) => {
     try {
-        const response = await Axios.put(`http://localhost:3001/updateTask`, data);
+        const response = await Axios.put(`https://docket-84ya.vercel.app/updateTask`, data);
         return response.data;
     } catch(error) {
         throw error.response.data;
@@ -12,7 +12,7 @@ export const editTask = createAsyncThunk("editTask", async(data) => {
 
 export const deleteTask = createAsyncThunk("deleteTask", async (taskId) => {
     try {
-        const response = await Axios.delete(`http://localhost:3001/deleteTask`, {
+        const response = await Axios.delete(`https://docket-84ya.vercel.app/deleteTask`, {
             params: {
                 taskId: taskId
             }
