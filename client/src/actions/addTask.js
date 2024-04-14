@@ -10,7 +10,7 @@ export const addTask = createAsyncThunk("addTask", async (data) => {
             ...data,
             date: formattedDate
         };
-        const response = await Axios.post("http://localhost:3001/addTask", requestData);
+        const response = await Axios.post("https://docket-84ya.vercel.app/addTask", requestData);
         return response.data
     } catch(error) {
         throw error.response.data
@@ -19,7 +19,7 @@ export const addTask = createAsyncThunk("addTask", async (data) => {
 
 export const getTask = createAsyncThunk("getTask", async (userId) => {
     try {
-        const response = await Axios.get(`http://localhost:3001/getTask`, {
+        const response = await Axios.get(`https://docket-84ya.vercel.app/getTask`, {
             params: {
                 userID: userId
             }
@@ -32,7 +32,7 @@ export const getTask = createAsyncThunk("getTask", async (userId) => {
 
 export const getOverDueTask = createAsyncThunk("getOverDueTask", async (userId) => {
     try {
-        const response = await Axios.get(`http://localhost:3001/overDueTask`, {
+        const response = await Axios.get(`https://docket-84ya.vercel.app/overDueTask`, {
             params: {
                 userID: userId
             }
@@ -44,7 +44,7 @@ export const getOverDueTask = createAsyncThunk("getOverDueTask", async (userId) 
 })
 
 export const getUpcommingTask = createAsyncThunk('getUpcommingTask', async(userId) => {
-    const response = await Axios.get(`http://localhost:3001/upcommingTask`, {
+    const response = await Axios.get(`https://docket-84ya.vercel.app/upcommingTask`, {
         params: {
             userID: userId
         }
