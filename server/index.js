@@ -25,7 +25,7 @@ const StickyWall = require('./model/stickyWallModel');
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
+    origin: ["hhttps://docket-rose.vercel.app"],
     methods: ["POST, GET, DELETE, PUT"],
     credentials: true,
   })
