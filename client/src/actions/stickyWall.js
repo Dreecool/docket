@@ -4,7 +4,7 @@ import Axios from 'axios'
 export const addStickWall = createAsyncThunk("stick wall", async(data) => {
     try {
         const response = await Axios.post(
-            "http://localhost:3001/stickyWall", data
+            "https://docket-84ya.vercel.app/stickyWall", data
         )
         return response.data
     } catch(error) {
@@ -16,7 +16,7 @@ export const addStickWall = createAsyncThunk("stick wall", async(data) => {
 export const getStickWall = createAsyncThunk("get data stick wall", async(id) => {
     
     try {
-        const response = await Axios.get("http://localhost:3001/stickyWall/getStickyWall", {
+        const response = await Axios.get("https://docket-84ya.vercel.app/stickyWall/getStickyWall", {
             params: {
                 userID: id
             }
@@ -32,7 +32,7 @@ export const getStickWall = createAsyncThunk("get data stick wall", async(id) =>
 export const deleteStickWall = createAsyncThunk("delete stick wall", async(id) => {
     
     try {
-        const response = await Axios.delete("http://localhost:3001/stickyWall/deleteStickWall", {
+        const response = await Axios.delete("https://docket-84ya.vercel.app/stickyWall/deleteStickWall", {
             params: {
                 userID: id
             }
